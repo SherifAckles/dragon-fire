@@ -1,3 +1,4 @@
+import {update as UpdateDragon, draw as drawDragon, DRAGON_SPEED} from "./dragon.js"
 let lastRenderTime = 0;
 const DRAGON_SPEED = 1;
 // loop function
@@ -16,3 +17,11 @@ function main(currentTime) {
 }
 // run the loop for the first time
 window.requestAnimationFrame(main);
+
+function update(params) {
+    UpdateDragon
+}
+
+function draw(params) {
+    drawDragon
+}
