@@ -167,3 +167,10 @@ function dragonIntersection() {
     }
   }
 }
+// cheat button
+cheat.addEventListener("click", function () {
+     score += 10;  // add 10 points to the current score
+     DRAGON_SPEED = 2; // reset the speed to the begining speed
+
+
+})

@@ -30,14 +30,13 @@ body {
 }
 
 .dragon {
-  background: url(fire.png);
-  background-size: 100% 100%;
-  z-index: 55;
-  border: 2px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+    background: url(fire.png); /* the dragon carry the eaten fire */
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  z-index: 1;
+  border: 1px solid #000;
+  
+  
 }
 .head {
   background: url(dragon.png);
@@ -54,12 +53,12 @@ body {
 .food {
   background: url(fire.png);
   background-size: 100% 100%;
-  
-}
-/* reduce the speed always at the begining speed "2" */
+  background-repeat: no-repeat;
+  }
+/* reset the speed to the begining speed "2" and add 10 points to the score after eating the next fire*/
 .cheat-btn{
   position: absolute;
-  right: 15rem;
+  right: 10rem;
   color: #000;
   padding: 1rem;
   border-radius: 1rem;
@@ -71,4 +70,17 @@ body {
 
 .cheat-btn:hover{
   background: red;
+}
+
+.cheat-mode{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  right: 2rem;
+  top: 5rem;
+}
+
+.hidden{
+  display: none;
 }
