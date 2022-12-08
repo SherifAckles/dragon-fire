@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: black;
+}
+
+#game-board {
+  height: 100vmin;
+  width: 100vmin;
+  background: #68b984;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+}
+.score {
+  background: yellow;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.dragon {
+  background: url(rat.png);
+  background-size: 100% 100%;
+  z-index: 55;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.head {
+  background: url(dragon.png);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 22;
+}
+
+.food {
+  background: url(rat.png);
+  background-size: 100% 100%;
+  
+}
+.again {
+  cursor: pointer;
+}
