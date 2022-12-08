@@ -144,7 +144,7 @@ function expendDragon() {
 function checkGameOver() {
   if (dragonOutOfGrid() || dragonIntersection()) {
     location.reload();
-    alert("Game Over : You Loose");
+    alert("Game Over : You Loose, Play again ??");
     alert = function () {};
   }
 }
