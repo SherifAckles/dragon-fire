@@ -28,7 +28,7 @@ body {
 }
 
 .dragon {
-  background: url(rat.png);
+  background: url(fire.png);
   background-size: 100% 100%;
   z-index: 55;
   border: 2px solid #000;
@@ -48,7 +48,7 @@ body {
 }
 
 .food {
-  background: url(rat.png);
+  background: url(fire.png);
   background-size: 100% 100%;
   
 }

@@ -172,7 +172,7 @@ function checkGameOver(){
 
 
 function dragonOutOfGrid(){
-    return dragonBody[0].x < 0 || dragonBody[0].x > 16 || dragonBody[0].y < 0 || dragonBody[0].y > 16;
+    return dragonBody[0].x < 1 || dragonBody[0].x > 21 || dragonBody[0].y < 1 || dragonBody[0].y > 21; // the bug was here it was 0 not 1 and 16 not 21 
 }
 
 function dragonIntersection(){
