@@ -2,7 +2,8 @@ let lastPaintTime = 0;
 let DRAGON_SPEED = 2;
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = inputDirection;
-let cheat = document.querySelector(".cheat-btn")
+let cheat = document.querySelector(".cheat-btn");
+let cheatMode = document.querySelector(".cheat-mode");
 const EXPENTION_AMOUNT = 1;
 let score = 0;
 const dragonBody = [{ x: 8, y: 8 }];
@@ -169,8 +170,8 @@ function dragonIntersection() {
 }
 // cheat button
 cheat.addEventListener("click", function () {
-     score += 10;  // add 10 points to the current score
-     DRAGON_SPEED = 2; // reset the speed to the begining speed
+  score += 10; // add 10 points to the current score
+  DRAGON_SPEED = 2; // reset the speed to the begining speed
 
-
-})
+  cheatMode.classList.toggle("hidden"); //confirms cheat mode is active
+});
