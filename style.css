@@ -47,6 +47,8 @@ body {
   justify-content: center;
   color: #fff;
   z-index: 22;
+   width: 4rem; /* making the fire moves a bit */
+  height: 4rem; /* making the fire moves a bit */
 }
 
 .food {
