@@ -11,6 +11,7 @@ body {
   align-items: center;
   margin: 0;
   background-color: black;
+  position: relative;
 }
 
 #game-board {
@@ -25,6 +26,7 @@ body {
   background: yellow;
   padding: 10px 20px;
   border-radius: 20px;
+  
 }
 
 .dragon {
@@ -52,6 +54,19 @@ body {
   background-size: 100% 100%;
   
 }
-.again {
-  cursor: pointer;
+/* reduce the speed always at the begining speed "2" */
+.cheat-btn{
+  position: absolute;
+  right: 15rem;
+  color: #000;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 6rem;
+  font-weight: bold;
+  font-size: large;
+  
+}
+
+.cheat-btn:hover{
+  background: red;
 }
