@@ -34,7 +34,7 @@ body {
   background-size: 1rem;
   background-repeat: no-repeat;
   z-index: 1;
-  border: 1px solid #000;
+ 
 }
 .head {
   background: url(dragon.png);
